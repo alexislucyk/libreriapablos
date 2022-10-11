@@ -1,0 +1,59 @@
+
+.menu{
+    list-style-type: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    /* background-color: rgb(39, 121, 168); */
+    padding: 0;
+    width:95%;
+    max-width: 1000px;
+    margin: auto;
+    /* background-image: url(../multimedia/imagen3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    display: block;
+
+}
+.menu li{
+    display: inline-block;
+    
+} 
+ 
+/* .menu li a:hover{
+    background: orangered;
+} */
+
+.imagenTop{
+    background-size: contain;
+    background-position: center;
+    margin-top: 0px;
+   
+}
+
+.milogo img{
+    width: 10%;
+    height: 10%;
+
+}
+
+.listaServicios{
+    font-style: normal;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.listaServicios li a{
+    color: crimson;
+    padding: 15px;
+}
