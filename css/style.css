@@ -1,50 +1,223 @@
+/* Reseteo de CSS */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
 
+/* Establece medida del rem */
+html{
+    font-size: 62,5%;
+}
+
+
+
+/* Estilo para menu */
+/* .headerIndex{
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: headerIndex;
+} */
 .menu{
+    grid-area: menu;
     list-style-type: none;
-    font-style: italic;
+    font-style:normal;
     font-weight: bold;
     font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: right;
     padding: 0;
-    width:95%;
     max-width: 1000px;
     margin: auto;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu li a{
-    text-decoration: none;
-    color: black;
-    padding: 30px;
-    display: block;
-
-}
-.menu li{
+.menu ul li{
+    color: rgb(11, 40, 167);
+    padding: 5px;
+    margin: 5px;
     display: inline-block;
-    
-} 
- 
-.imagenTop{
-    background-size: contain;
-    background-position: center;
-    margin-top: 0px;
-   
+}
+ .menu ul li a{
+    text-decoration: none;
+ }
+
+.milogo { 
+    width: 80px;
+    height: 80px;
+
 }
 
-.milogo img{
-    width: 10%;
-    height: 10%;
+.principal{
+    grid-area: titulo;
+}
+.principal__titulo{
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    background-color: brown;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    border: solid 3px black;
+}
+.principal__subtitulo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 0.5fr 1fr 1fr 1fr 0.1fr;
+    grid-template-areas: 
+    "headerIndex headerIndex"
+    "titulo titulo"
+    "p1 p2"
+    "p3 p4"
+    "pie pie";
+    
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.productos{grid-area: p1;}
+.productos2{grid-area: p2;}
+.productos3{grid-area: p3;}
+.productos4{grid-area: p4;}
+ .piepagIndex{grid-area: pie;}
 
+
+.redesoc{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+}
+.redesoc img{
+    width: 50px;
+    display: block;
+}
+
+@media screen and (max-width: 500px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 0.5fr);
+        grid-template-areas: 
+        "headerIndex"
+        "titulo"
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "pie";
+    }
+    .headerIndex{
+        flex-direction: column;
+    }
+}
+
+
+
+/* Estilo para servicios */
+.tituloServicios{
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    border: solid 5px green;
+}
+
+.subtituloServicios{
+    padding-left: 100px;
+    padding-bottom: 100px;
 }
 
 .listaServicios{
-    font-style: normal;
-    font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: left;
+    background-color: rgb(213, 214, 147);
+    margin-top: 20px;
+    margin-right: 400px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-right: 400px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    border: solid 3px black;
 }
 
 .listaServicios li a{
-    color: crimson;
+    color: rgb(112, 6, 27);
     padding: 15px;
+}
+/* EStilo para nosotros */
+.cajaOver{
+    background-color: aquamarine;
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+}
+
+/* Estilo para galeria */
+
+.galeria{
+    text-align: left;
+    padding-left: 200px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+.contenedorImg{
+    display: grid;
+    width: 800px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img1 img1 img2"
+    "img3 img4 img5"
+    "pie pie pie";
+    justify-items: center;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.img1{
+    grid-area: img1;
+
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.img4{
+    grid-area: img4;
+}
+
+.img5{
+    grid-area: img5;
+}
+
+.piePagina{
+    grid-area: pie;
+    font-size: 25px;
+    text-align: center;
+
 }
