@@ -1,0 +1,21 @@
+/* Reseteo de CSS */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Establece medida del rem */
+html{
+    font-size: 62,5%;
+}
+@import "index";
+@import "generales";
+@import "galeria";
+@import "servicios";
+@import "nosotros";
+@import "contacto";
+@import "mediaquery";
+
+
+

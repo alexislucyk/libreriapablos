@@ -1,0 +1,51 @@
+@media screen and (max-width: 500px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr repeat(4, 0.8fr) 0.1fr;;
+        grid-template-areas: 
+        "headerIndex"
+        "titulo"
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "pie";
+    }
+    .headerIndex{
+        flex-direction: column;
+    }
+    .milogo{
+        padding: 15px;
+    }
+    .menu{
+        padding: 10px;
+    }
+    .redesoc{
+        display: none;
+    }
+    .productos div{
+        flex-wrap: wrap;
+    }
+    .productos h2{
+        display: none;
+    }
+    .productos2 div{
+        flex-wrap: wrap;
+    }
+    .productos3 div{
+        flex-wrap: wrap;
+    }
+    .productos4 div{
+        flex-wrap: wrap;
+    }
+    .principal{
+        width: 500px;
+    }
+    .principal__titulo{
+        font-size: 30px;
+    }
+    .principal__subtitulo{
+        font-size: 20px;
+    }
+
+}

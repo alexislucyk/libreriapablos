@@ -1,0 +1,200 @@
+/* Reseteo de CSS */
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box; }
+
+/* Establece medida del rem */
+html {
+  font-size: 62,5%; }
+
+/* Estilos para Index */
+.principal {
+  grid-area: titulo; }
+
+.principal__titulo {
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: center;
+  background-color: brown;
+  border: solid 3px black; }
+
+.principal__subtitulo {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.2fr 0.5fr 1fr 1fr 0.1fr;
+  grid-template-areas: "headerIndex headerIndex" "titulo titulo" "p1 p2" "p3 p4" "pie pie"; }
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; }
+
+.productos {
+  grid-area: p1; }
+
+.productos2 {
+  grid-area: p2; }
+
+.productos3 {
+  grid-area: p3; }
+
+.productos4 {
+  grid-area: p4; }
+
+.redesoc {
+  position: fixed;
+  bottom: 30px;
+  right: 50px; }
+
+.redesoc img {
+  width: 50px;
+  display: block; }
+
+.piepagIndex {
+  grid-area: pie;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+/* Estilo para menu */
+.headerIndex {
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: headerIndex;
+  background-image: linear-gradient(to right, orange, green); }
+
+.headerIndex img {
+  padding: 10px; }
+
+.menu li {
+  list-style-type: none;
+  /* Saca los puntos de la lista */
+  display: inline-block;
+  /* Pone los items uno al lado de otro */
+  padding-right: 10px; }
+
+.menu li a {
+  text-decoration: none;
+  /* Saca el subrayado */
+  color: black; }
+
+.milogo {
+  width: 80px;
+  height: 80px; }
+
+/* Estilo para galeria */
+.galeria {
+  text-align: left;
+  padding-left: 200px;
+  margin-left: 200px;
+  margin-bottom: 50px; }
+
+.contenedorImg {
+  display: grid;
+  width: 800px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "img1 img1 img2" "img3 img4 img5" "pie pie pie";
+  justify-items: center;
+  align-items: center;
+  justify-content: start; }
+
+.img1 {
+  grid-area: img1; }
+
+.img2 {
+  grid-area: img2; }
+
+.img3 {
+  grid-area: img3; }
+
+.img4 {
+  grid-area: img4; }
+
+.img5 {
+  grid-area: img5; }
+
+.piePagina {
+  grid-area: pie;
+  font-size: 25px;
+  text-align: center; }
+
+/* Estilo para servicios */
+.tituloServicios {
+  text-align: center;
+  margin: 50px;
+  padding: 50px;
+  border: solid 5px green; }
+
+.subtituloServicios {
+  padding-left: 100px;
+  padding-bottom: 100px; }
+
+.listaServicios {
+  list-style-type: none;
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: left;
+  background-color: #d5d693;
+  margin-top: 20px;
+  margin-right: 400px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-right: 400px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  border: solid 3px black; }
+
+.listaServicios li a {
+  color: #70061b;
+  padding: 15px; }
+
+/* EStilo para nosotros */
+.cajaOver {
+  background-color: aquamarine;
+  width: 500px;
+  height: 500px;
+  overflow: auto; }
+
+/* Estilos para contactos */
+.tituloContacto {
+  text-align: center; }
+
+@media screen and (max-width: 500px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr repeat(4, 0.8fr) 0.1fr;
+    grid-template-areas: "headerIndex" "titulo" "p1" "p2" "p3" "p4" "pie"; }
+  .headerIndex {
+    flex-direction: column; }
+  .milogo {
+    padding: 15px; }
+  .menu {
+    padding: 10px; }
+  .redesoc {
+    display: none; }
+  .productos div {
+    flex-wrap: wrap; }
+  .productos h2 {
+    display: none; }
+  .productos2 div {
+    flex-wrap: wrap; }
+  .productos3 div {
+    flex-wrap: wrap; }
+  .productos4 div {
+    flex-wrap: wrap; }
+  .principal {
+    width: 500px; }
+  .principal__titulo {
+    font-size: 30px; }
+  .principal__subtitulo {
+    font-size: 20px; } }

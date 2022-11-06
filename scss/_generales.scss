@@ -1,0 +1,29 @@
+
+/* Estilo para menu */
+.headerIndex{
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: headerIndex;
+    background-image: linear-gradient(to right, orange, green);
+}
+.headerIndex img{
+    padding: 10px;
+}
+.menu li{
+    list-style-type: none; /* Saca los puntos de la lista */
+    display: inline-block; /* Pone los items uno al lado de otro */
+    padding-right: 10px;
+    
+}
+.menu li a{
+    text-decoration: none;  /* Saca el subrayado */
+    color: black;
+}
+
+.milogo { 
+    width: 80px;
+    height: 80px;
+
+}

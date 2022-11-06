@@ -1,0 +1,57 @@
+/* Estilos para Index */
+
+.principal{
+    grid-area: titulo;
+}
+.principal__titulo{
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    background-color: brown;
+    border: solid 3px black;
+}
+.principal__subtitulo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 0.5fr 1fr 1fr 0.1fr;
+    grid-template-areas: 
+    "headerIndex headerIndex"
+    "titulo titulo"
+    "p1 p2"
+    "p3 p4"
+    "pie pie";
+    
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.productos{grid-area: p1;}
+.productos2{grid-area: p2;}
+.productos3{grid-area: p3;}
+.productos4{grid-area: p4;}
+
+
+
+.redesoc{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+}
+.redesoc img{
+    width: 50px;
+    display: block;
+}
+.piepagIndex{
+    grid-area: pie;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
