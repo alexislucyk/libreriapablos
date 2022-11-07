@@ -1,7 +1,16 @@
 /* EStilo para nosotros */
+
+
+
+
 .cajaOver{
-    background-color: aquamarine;
+    background-color: rgb(27, 135, 99);
     width: 500px;
     height: 500px;
     overflow: auto;
+}
+.cajaOver p{
+    font-family: $fuenteTitulo;
+    font-size: $tamanoParafo;
+
 }

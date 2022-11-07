@@ -37,12 +37,14 @@ html{
     height: 80px;
 }
 
+
+@import "generales";
 @import "index";
 @import "galeria";
 @import "servicios";
 @import "nosotros";
 @import "contacto";
-@import "generales";
+
 @import "mediaquery";
 
 

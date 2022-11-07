@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reseteo de CSS */
 * {
   margin: 0;
@@ -36,6 +37,7 @@ html {
   width: 80px;
   height: 80px; }
 
+/* Fuentes, Tamaños y Colores */
 /* Estilos para Index */
 .principal {
   grid-area: titulo; }
@@ -55,7 +57,7 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0.2fr 0.5fr 1fr 1fr 0.1fr;
-  grid-template-areas: "headerIndex headerIndex" "titulo titulo" "p1 p2" "p3 p4" "pie pie"; }
+  grid-template-areas: "headerIndex headerIndex" "titulo titulo" "p1 p2" "p3 p4" "pie pie"; }
 
 .info {
   display: flex;
@@ -105,7 +107,7 @@ html {
   width: 800px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "img1 img1 img2" "img3 img4 img5" "pie pie pie";
+  grid-template-areas: "img1 img1 img2" "img3 img4 img5" "pie pie pie";
   justify-items: center;
   align-items: center;
   justify-content: start; }
@@ -163,10 +165,14 @@ html {
 
 /* EStilo para nosotros */
 .cajaOver {
-  background-color: aquamarine;
+  background-color: #1b8763;
   width: 500px;
   height: 500px;
   overflow: auto; }
+
+.cajaOver p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px; }
 
 /* Estilos para contactos */
 .tituloContacto {
@@ -185,7 +191,7 @@ html {
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.5fr repeat(4, 0.8fr) 0.1fr;
-    grid-template-areas: "headerIndex" "titulo" "p1" "p2" "p3" "p4" "pie"; }
+    grid-template-areas: "headerIndex" "titulo" "p1" "p2" "p3" "p4" "pie"; }
   .headerIndex {
     flex-direction: column; }
   .milogo {
