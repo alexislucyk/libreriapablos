@@ -10,5 +10,18 @@
     padding: 15px;
 }
 .mapa{
-    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.bodyCont{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+}
+
+.piepagContacto{
+    align-self: flex-end;
 }

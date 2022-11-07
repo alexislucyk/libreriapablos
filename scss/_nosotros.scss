@@ -4,13 +4,13 @@
 
 
 .cajaOver{
-    background-color: rgb(27, 135, 99);
+    background-color: rgb(135, 175, 162);
     width: 500px;
     height: 500px;
     overflow: auto;
-}
-.cajaOver p{
-    font-family: $fuenteTitulo;
-    font-size: $tamanoParafo;
-
+    p{
+        font-family: $fuenteTitulo;
+        font-size: $tamanoParafo;
+    
+    }
 }

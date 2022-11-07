@@ -7,7 +7,8 @@
 
 /* Establece medida del rem */
 html {
-  font-size: 62,5%; }
+  font-size: 62,5%;
+  height: 100%; }
 
 /* Estilo para menu */
 .headerIndex {
@@ -57,16 +58,15 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0.2fr 0.5fr 1fr 1fr 0.1fr;
-  grid-template-areas: "headerIndex headerIndex" "titulo titulo" "p1 p2" "p3 p4" "pie pie"; }
+  grid-template-areas: "headerIndex headerIndex" "titulo titulo" "p1 p2" "p3 p4" "pie pie"; }
 
 .info {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px; }
-
-.info p {
-  padding: 20px; }
+  .info p {
+    padding: 20px; }
 
 .productos {
   grid-area: p1; }
@@ -84,10 +84,9 @@ html {
   position: fixed;
   bottom: 30px;
   right: 50px; }
-
-.redesoc img {
-  width: 50px;
-  display: block; }
+  .redesoc img {
+    width: 50px;
+    display: block; }
 
 .piepagIndex {
   grid-area: pie;
@@ -107,7 +106,7 @@ html {
   width: 800px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "img1 img1 img2" "img3 img4 img5" "pie pie pie";
+  grid-template-areas: "img1 img1 img2" "img3 img4 img5" "pie pie pie";
   justify-items: center;
   align-items: center;
   justify-content: start; }
@@ -145,7 +144,6 @@ html {
 
 .listaServicios {
   list-style-type: none;
-  color: whitesmoke;
   font-size: 20px;
   text-align: left;
   background-color: #d5d693;
@@ -158,21 +156,19 @@ html {
   padding-bottom: 80px;
   padding-left: 20px;
   border: solid 3px black; }
-
-.listaServicios li a {
-  color: #70061b;
-  padding: 15px; }
+  .listaServicios li a {
+    color: black;
+    padding: 15px; }
 
 /* EStilo para nosotros */
 .cajaOver {
-  background-color: #1b8763;
+  background-color: #87afa2;
   width: 500px;
   height: 500px;
   overflow: auto; }
-
-.cajaOver p {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12px; }
+  .cajaOver p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px; }
 
 /* Estilos para contactos */
 .tituloContacto {
@@ -185,13 +181,25 @@ html {
   padding: 15px; }
 
 .mapa {
-  margin-top: 100px; }
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px; }
 
+.bodyCont {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh; }
+
+.piepagContacto {
+  align-self: flex-end; }
+
+/* Responsive para tables */
+/* Responsive para moviles */
 @media screen and (max-width: 500px) {
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.5fr repeat(4, 0.8fr) 0.1fr;
-    grid-template-areas: "headerIndex" "titulo" "p1" "p2" "p3" "p4" "pie"; }
+    grid-template-areas: "headerIndex" "titulo" "p1" "p2" "p3" "p4" "pie"; }
   .headerIndex {
     flex-direction: column; }
   .milogo {

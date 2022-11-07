@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body class="container">
+<body class="bodyCont container">
     <div class="contenedorCont">
         <header class="headerIndex">
             <!-- Encabezado -->
@@ -41,41 +41,44 @@
             <!-- Formulario -->
 
 
-            <form class="formContacto">
-                
+            <form class="formContacto row">
+                <div class="col-md-6">
+                    <div class="nombreApellido">
+                        <input type="email" class="form-control" id="floatingInputValue"
+                            placeholder="Apellido y Nombre">
+                    </div>
 
-                <div class="nombreApellido col-md-6">
-                    <input type="email" class="form-control" id="floatingInputValue" placeholder="Apellido y Nombre">    
-                </div>
+                    <div class="direccion">
+                        <input type="email" class="form-control" id="floatingInputValue" placeholder="Direccion">
+                    </div>
 
-                <div class="direccion col-md-6">
-                    <input type="email" class="form-control" id="floatingInputValue" placeholder="Direccion">    
-                </div>
+                    <div class="correo">
+                        <input type="email" class="form-control" id="floatingInputValue"
+                            placeholder="Correo electronico">
+                    </div>
 
-                <div class="correo col-md-6">
-                    <input type="email" class="form-control" id="floatingInputValue" placeholder="Correo electronico">
+                    <div class="mensaje">
+                        <textarea class="form-control" placeholder="Dejanos un mensaje." id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                    </div>
+
+                    <div class="btnEnviar">
+                        <button type="submit" class="btn_Enviar btn btn-success">Enviar</button>
+                    </div>
                 </div>
-               
-                <div class="mensaje col-md-6">
-                    <textarea class="form-control" placeholder="Dejanos un mensaje." id="floatingTextarea2" style="height: 100px"></textarea>    
+                <div class="mapa col-md-6">
+                    <!-- Ubicacion en Google Maps -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6263.510358118972!2d-61.52480741389506!3d-28.229294184652236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94381119f54b28e9%3A0x2e3fc53dc3010827!2sEstacion%20El%20Nochero!5e0!3m2!1ses-419!2sar!4v1663037503229!5m2!1ses-419!2sar"
+                        width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                
-                <div class="btnEnviar col-md-6">
-                    <button type="submit" class="btn_Enviar btn btn-success">Enviar</button>
-                </div>
-                
 
             </form>
         </main>
-        <section class="mapa">
-            <!-- Ubicacion en Google Maps -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6263.510358118972!2d-61.52480741389506!3d-28.229294184652236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94381119f54b28e9%3A0x2e3fc53dc3010827!2sEstacion%20El%20Nochero!5e0!3m2!1ses-419!2sar!4v1663037503229!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        
 
-        <footer>
+        <footer class="piepagContacto">
             <!-- pie de pagina -->
 
             <h5>

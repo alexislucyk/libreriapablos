@@ -13,7 +13,6 @@
 
 .listaServicios{
     list-style-type: none;
-    color: whitesmoke;
     font-size: 20px;
     text-align: left;
     background-color: rgb(213, 214, 147);
@@ -26,9 +25,9 @@
     padding-bottom: 80px;
     padding-left: 20px;
     border: solid 3px black;
+    li a{
+        color:$colorFuente;
+        padding: 15px;
+    }
 }
 
-.listaServicios li a{
-    color: rgb(112, 6, 27);
-    padding: 15px;
-}
