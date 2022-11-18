@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    
 }
 
 /* Establece medida del rem */
@@ -30,14 +31,34 @@ html{
 }
 .menu li a{
     text-decoration: none;  /* Saca el subrayado */
-    color: black;
+    color: white; 
+    font-size: 20px;
 }
 
 .milogo { 
     width: 80px;
     height: 80px;
+    border-radius: 150px;
 }
-
+footer{
+    background-image: linear-gradient(to right, rgb(28, 105, 141), green);
+    text-align: center;
+    margin-top: 95px;
+    margin-bottom: 0px;
+    display: flex;  
+    align-items: center;
+    grid-area: pie;
+    justify-content: space-evenly;
+    //h3{display: inline-block;}
+    .rede_soc{
+        img{
+            width: 50px;
+            display:inline-flex;
+            border-radius: 50%;
+            
+        }
+    } 
+}
 
 @import "generales";
 @import "index";
@@ -47,6 +68,3 @@ html{
 @import "contacto";
 
 @import "mediaquery";
-
-
-

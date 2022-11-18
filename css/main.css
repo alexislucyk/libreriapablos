@@ -32,32 +32,47 @@ html {
 .menu li a {
   text-decoration: none;
   /* Saca el subrayado */
-  color: black; }
+  color: white;
+  font-size: 20px; }
 
 .milogo {
   width: 80px;
-  height: 80px; }
+  height: 80px;
+  border-radius: 150px; }
+
+footer {
+  background-image: linear-gradient(to right, #1c698d, green);
+  text-align: center;
+  margin-top: 95px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  grid-area: pie;
+  justify-content: space-evenly; }
+  footer .rede_soc img {
+    width: 50px;
+    display: inline-flex;
+    border-radius: 50%; }
 
 /* Fuentes, Tamaños y Colores */
 /* Estilos para Index */
 .principal {
   grid-area: titulo; }
-
-.principal__titulo {
-  color: whitesmoke;
-  font-size: 50px;
-  text-align: center;
-  background-color: brown;
-  border: solid 3px black; }
-
-.principal__subtitulo {
-  text-align: center;
-  margin-bottom: 20px; }
+  .principal .principal__titulo {
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    background-color: #379c97;
+    border: solid 3px black; }
+  .principal .principal__subtitulo {
+    text-align: center;
+    margin-bottom: 20px; }
 
 .contenedor {
+  background: #aaddfc;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.2fr 0.5fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 0.3fr 0.5fr 0.5fr 150px;
   grid-template-areas: "headerIndex headerIndex" "titulo titulo" "p1 p2" "p3 p4" "pie pie"; }
 
 .info {
@@ -80,56 +95,40 @@ html {
 .productos4 {
   grid-area: p4; }
 
-.redesoc {
-  position: fixed;
-  bottom: 30px;
-  right: 50px; }
-  .redesoc img {
-    width: 50px;
-    display: block; }
-
-.piepagIndex {
-  grid-area: pie;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
 /* Estilo para galeria */
-.galeria {
-  text-align: left;
-  padding-left: 200px;
-  margin-left: 200px;
-  margin-bottom: 50px; }
-
-.contenedorImg {
-  display: grid;
-  width: 800px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "img1 img1 img2" "img3 img4 img5" "pie pie pie";
-  justify-items: center;
-  align-items: center;
-  justify-content: start; }
-
-.img1 {
-  grid-area: img1; }
-
-.img2 {
-  grid-area: img2; }
-
-.img3 {
-  grid-area: img3; }
-
-.img4 {
-  grid-area: img4; }
-
-.img5 {
-  grid-area: img5; }
-
-.piePagina {
-  grid-area: pie;
-  font-size: 25px;
-  text-align: center; }
+.contenedorGal {
+  background-color: #aaddfc; }
+  .contenedorGal .galeria {
+    grid-area: gale;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px; }
+    .contenedorGal .galeria .galeria_titulo {
+      text-align: center; }
+  .contenedorGal .contenedorImg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 0.8fr 150px;
+    grid-template-areas: "img1 img1 img2" "img3 img4 img5" "img6 img7 img8" "pie pie pie";
+    justify-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px; }
+  .contenedorGal .img1 {
+    grid-area: img1; }
+  .contenedorGal .img2 {
+    grid-area: img2; }
+  .contenedorGal .img3 {
+    grid-area: img3; }
+  .contenedorGal .img4 {
+    grid-area: img4; }
+  .contenedorGal .img5 {
+    grid-area: img5; }
+  .contenedorGal .img6 {
+    grid-area: img6; }
+  .contenedorGal .img7 {
+    grid-area: img7; }
+  .contenedorGal .img8 {
+    grid-area: img8; }
 
 /* Estilo para servicios */
 .tituloServicios {
@@ -172,10 +171,17 @@ html {
 
 /* Estilos para contactos */
 .tituloContacto {
-  text-align: center; }
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 80px; }
 
 .tituloContacto_subt {
-  color: green; }
+  color: green;
+  text-align: center; }
+
+.tituloContacto_subt_subt2 {
+  color: red;
+  text-align: center; }
 
 .formContacto div {
   padding: 15px; }
@@ -184,14 +190,6 @@ html {
   display: flex;
   justify-content: space-around;
   margin-top: 20px; }
-
-.bodyCont {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100vh; }
-
-.piepagContacto {
-  align-self: flex-end; }
 
 /* Responsive para tables */
 /* Responsive para moviles */
