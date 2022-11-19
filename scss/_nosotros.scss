@@ -1,16 +1,54 @@
 /* EStilo para nosotros */
 
-
-
-
-.cajaOver{
-    background-color: rgb(135, 175, 162);
-    width: 500px;
-    height: 500px;
-    overflow: auto;
-    p{
-        font-family: $fuenteTitulo;
-        font-size: $tamanoParafo;
-    
+.contenedorNos{
+    background:rgb(170, 221, 252);
+    .titulo{
+        text-align: center;
+        align-items: center;
+        align-content: center;
     }
+    .titulo_sub{
+        margin-left: 40px;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: row;
+        .fotoVieja{
+            width: 500px;
+            border-radius: 20px;
+            margin-left: 30px;
+        }
+        .cajaOver{
+            width: 500px;
+            height: 500px;
+            overflow: auto;
+            margin-top: 5px;
+            margin-left: 30px;
+            
+                p{
+                    font-family: $fuenteTitulo;
+                    font-size: $tamanoParafo;
+                    margin-top: 20px;
+
+                
+                }
+        }
+
+        @media screen and (max-width:768px) {
+            .fotoVieja{
+                width: 400px;
+                height: 400px;
+            }
+
+        }
+    
+        @media screen and (max-width:500px) {
+            .fotoVieja{
+                width: 300px;
+                height: 300px;
+            }
+            
+
+        }
+    }    
 }

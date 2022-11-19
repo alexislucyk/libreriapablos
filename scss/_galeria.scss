@@ -15,7 +15,6 @@
 
     .contenedorImg{
         display: grid;
-        
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr 0.8fr 150px;
         grid-template-areas: 
@@ -24,10 +23,12 @@
         "img6 img7 img8"
         "pie pie pie";
         justify-items: center;
-        
         grid-column-gap: 10px;
         grid-row-gap: 20px;
         
+        img{
+            border-radius: 20px;
+        }
     }
 
     .img1{grid-area: img1;}
@@ -39,4 +40,46 @@
     .img7{grid-area: img7;}
     .img8{grid-area: img8;}
     
+    @media screen and (max-width:768px){
+        .contenedorImg{
+            img{
+                width: 220px;
+                height: 220px; 
+            }
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8";
+            grid-row-gap: 10px;
+    
+        }        
+    
+    }
+
+    @media screen and (max-width:500px){
+        .contenedorImg{
+            img{
+                width: 200px;
+                height: 200px; 
+            }
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8";
+            grid-row-gap: 10px;
+    
+        }        
+    
+    }
 }
+

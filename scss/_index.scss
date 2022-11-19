@@ -1,23 +1,5 @@
 /* Estilos para Index */
 
-.principal{
-    grid-area: titulo;
-    .principal__titulo{
-        color: whitesmoke;
-        font-size: 50px;
-        text-align: center;
-        background-color: rgb(55, 156, 151);
-        border: solid 3px black;
-    }
-
-    .principal__subtitulo{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-}
-
-
 .contenedor{
     background:rgb(170, 221, 252);
     display: grid;
@@ -29,19 +11,172 @@
     "p1 p2"
     "p3 p4"
     "pie pie";
+
+    section{
+        div{
+            img{
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .principal{
+        grid-area: titulo;
+        .principal__titulo{
+            color: whitesmoke;
+            font-size: 50px;
+            text-align: center;
+            background-color: rgb(55, 156, 151);
+            border: solid 3px black;
+        }
+        .principal__subtitulo{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        p{
+            padding: 20px;
+        }
+    }
+    
+    .productos{grid-area: p1;}
+    .productos2{grid-area: p2;}
+    .productos3{grid-area: p3;}
+    .productos4{grid-area: p4;}
     
 }
-.info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    p{
-        padding: 20px;
+
+/* Responsive para tables */
+@media screen and (max-width:768px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.3fr repeat(4, 0.8fr) 0.1fr;;
+        grid-template-areas: 
+        "headerIndex"
+        "titulo"
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "pie";
     }
+    .headerIndex{
+        flex-direction: column;
+        width: auto;
+    }
+    .milogo{
+        padding: 15px;
+    }
+    .menu{
+        padding: 10px;
+    }
+    .rede_soc{
+        display: none;
+    }
+    .productos div{
+        flex-wrap: wrap;
+        p{
+            text-align: center;
+        }
+    }
+    .productos h2{
+        display: none;
+    }
+    .productos2 div{
+        flex-wrap: wrap;
+        p{
+            text-align: center;
+        }
+    }
+    .productos3 div{
+        flex-wrap: wrap;
+        p{
+            text-align: center;
+        }
+    }
+    .productos4 div{
+        flex-wrap: wrap;
+        p{
+            text-align: center;
+        }
+    }
+    .principal{
+        width: auto;
+
+        .principal__titulo{
+            border: 1px solid black;
+            width:auto;
+            font-size: 30px;
+        }
+        .principal__subtitulo{
+            font-size: 25px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+
 }
 
-.productos{grid-area: p1;}
-.productos2{grid-area: p2;}
-.productos3{grid-area: p3;}
-.productos4{grid-area: p4;}
+/* Responsive para moviles */
+@media screen and (max-width: 500px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr repeat(4, 0.8fr) 0.1fr;;
+        grid-template-areas: 
+        "headerIndex"
+        "titulo"
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "pie";
+    }
+    .headerIndex{
+        flex-direction: column;
+    }
+    .milogo{
+        padding: 15px;
+    }
+    .menu{
+        padding: 10px;
+        li{
+            display: block;
+        }
+    }
+    .rede_soc{
+        display: none;
+    }
+    .productos div{
+        flex-wrap: wrap;
+    }
+    .productos h2{
+        display: none;
+    }
+    .productos2 div{
+        flex-wrap: wrap;
+    }
+    .productos3 div{
+        flex-wrap: wrap;
+    }
+    .productos4 div{
+        flex-wrap: wrap;
+    }
+    .principal{
+        width: 500px;
+    }
+    .principal__titulo{
+        font-size: 30px;
+    }
+    .principal__subtitulo{
+        font-size: 20px;
+    }
+
+}

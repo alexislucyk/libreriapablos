@@ -1,5 +1,7 @@
 /* Estilos para contactos */
-
+.contenedorCont{
+    background:rgb(170, 221, 252);
+}
 .tituloContacto{
     text-align: center;
     margin-top: 30px;
@@ -19,6 +21,9 @@
 .mapa{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
+    iframe{
+        border-radius: 20px;
+    }
 }
 
